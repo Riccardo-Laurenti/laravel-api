@@ -19,8 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
+// Rotta lista dei post
 Route::get('/projects', [ProjectController::class, 'index']);
+
+
+// Rotta per avere il dettaglio di un post
+Route::get('/projects/{project}', [ProjectController::class, 'show']);
 
 
 //Route::resource('posts', ProjectController::class);
